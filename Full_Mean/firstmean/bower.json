@@ -1,0 +1,21 @@
+{
+  "name": "firstmean",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "CristyMona11 <cristina.monarrez.11@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CristyMona11/DojoAssignments",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.4",
+    "angular": "^1.6.4"
+  }
+}

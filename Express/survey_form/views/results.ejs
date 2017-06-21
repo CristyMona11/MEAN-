@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1><u>Submitted Information</u></h1>
+    <% for (var i = 0; i < info.length; i++) { %>
+      <p>Name:<%= info[i].html_name %></p>
+      <p>Dojo Location:<%= info[i].location %></p>
+      <p>Favorite Language:<%= info[i].language %></p>
+      <p>Comment:<%= info[i].comment %></p>
+    <% } %>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+#container{
+          padding:10px;
+          background-color: black;
+          color: white;
+          }
+img{
+  height: 350px;
+  width: 450px;
+  margin: 5px;
+}

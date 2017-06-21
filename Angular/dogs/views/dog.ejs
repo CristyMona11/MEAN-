@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Individual Dog</title>
+  </head>
+  <body>
+    <a href="/">All Dogs</a>
+
+    <h2><%= dog.breed%></h2>
+
+    <p>Color:<%= dog.color %></p>
+    <p>Size:<%= dog.size %></p>
+    <a href="/mongooses/<%= dog._id %>/edit">Edit</a>
+    <form action="/mongooses/<%= dog.id %>/destroy" method="POST"><input type="submit" value="Delete"></form>
+  </body>
+</html>

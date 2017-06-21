@@ -1,0 +1,21 @@
+<div ng-controller="TeamsController"><br>
+  <br>
+  <form>
+    <label for="name">Name:</label>
+    <input id="name" type="text" ng-model="newTeam.name">
+    <button type="submit" ng-click="create()">Create Team</button>
+  </form>
+  <br><br>
+  <table border = "3" border-width: 450px;>
+    <tr>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+    <tbody ng-repeat = "team in teams">
+      <tr>
+        <td ng-bind="team.name"></td>
+        <td><button ng-click="delete($index)">Delete Team</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

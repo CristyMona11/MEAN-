@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Dogs</h1>
+    <a href='/mongooses/new'>Add a Dog</a>
+    <hr><hr>
+    <ul>
+      <% for (var i = 0; i< dog.length; i++) { %>
+      <li>Breed:<a href= "/mongooses/<%= dog[i]._id %>"><%= dog[i].breed %></a></li><br>
+      <li>Color:<%= dog[i].color %></li><br>
+      <li>Size:<%= dog[i].size %></li>
+      <hr>
+      <% } %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<h2>Update Friend</h2>
+<p>Name: {{friend.first_name}}  {{friend.last_name}}</p>
+<p>{{ friend.birthday}}</p>
+<hr><hr>
+<form>
+  <input type="text" name="first_name" ng-model="newFriend.first_name" placeholder="First Name"><br><br>
+  <input type="text" name="last_name" ng-model="newFriend.last_name" placeholder="Last Name"><br><br>
+  <input type="date" name="birthday" ng-model="newFriend.birthday" placeholder="Birthday"><br><br>
+  <input type="submit" ng-click="updateFriend()" value="Update">
+  /* if you ever see ng-click or ng-submit, it means it MUST match a function*/
+</form>
+<hr>
+<a href="#!/home">Back Home</a>

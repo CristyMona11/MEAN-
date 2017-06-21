@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Dog</title>
+  </head>
+  <body>
+    <h1>Edit/Remove a Dog</h1>
+    <hr><hr><hr>
+    <form action="/mongooses/<%= dog._id %>" method="post">
+      <label for="breed">Breed</label>
+      <input type="text" name="breed" value="<%= dog.breed %>"><br><br>
+      <label for="color">Color:</label>
+      <input type="text" name="color" value="<%= dog.color %>"><br><br>
+      <label for="size">Size</label>
+      <input type="text" name="size" value="<%= dog.size %>"><br><br>
+      <input type="submit" name="submit" value="Update">
+    </form>
+      <h3><a href="/">Back to Dogs</a></h3>
+  </body>
+</html>

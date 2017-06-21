@@ -1,0 +1,17 @@
+<h1>Friends</h1>
+<table border="1px" width= "60%">
+  <tr>
+    <th>Name</th>
+    <th>Show</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  <tr ng-repeat="friend in friends">
+    <td>{{friend.first_name}} {{friend.last_name}}</td>
+    <td><a href="#!/show/{{friend._id}}">Show</a></td>/* angular tag referencing route that takes in a parameter of the friend being repeated, and displaying all of the friend's info.*/
+    <td><a href="#!/update/{{friend._id}}">Update</a></td>
+    <td><a href="/#!/" ng-click="delete(user._id)">Delete</a></td>
+  </tr><br><br>
+</table> <br><br>
+<hr>
+<button><a href="/#!/new">New Friend</a></button>

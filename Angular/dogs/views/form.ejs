@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dog Form</title>
+  </head>
+  <body>
+    <h1>Add a Dog</h1>
+    <hr><hr>
+    <form action="/mongooses" method="post">
+      <label for="breed">Breed</label>
+      <input type="text" name="breed" value=""><br><br>
+      <label for="color">Color:</label>
+      <input type="text" name="color" value=""><br><br>
+      <label for="size">Size</label>
+      <input type="text" name="size" value=""><br><br>
+      <% if(typeof(error) != 'undefined' ) { %>
+        <%= error %><br><br>
+        <% } %>
+      <input type="submit" name="submit" value="Add">
+    </form>
+  </body>
+</html>

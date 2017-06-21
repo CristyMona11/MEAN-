@@ -1,0 +1,23 @@
+{
+  "name": "wall",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "CristyMona11 <cristina.monarrez.11@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CristyMona11/DojoAssignments",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-cookies": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}
